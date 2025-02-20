@@ -40,10 +40,10 @@ layer_depth <- 2.0 # m
 # local machine -- in which case you should ensure the argument to setwd 
 # (i.e., the bit in brackets) points to the directory holding the data
 
-#if (!grepl("Data",getwd())){
-#  setwd("Data") 
-#}
-setwd("./Data/")  # must be in the main directory first, otherwise error
+if (!grepl("Data",getwd())){
+  setwd("./Data") 
+}
+
 hyps_name<-paste("stor_hyps.csv",sep="")
 met_name<-paste("met.csv",sep="")
 val_name<-paste("AnnMB.csv",sep="")
